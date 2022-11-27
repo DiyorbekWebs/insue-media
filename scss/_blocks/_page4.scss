@@ -1,0 +1,188 @@
+.page4 {
+    padding: 100px 120px 100px 120px;
+    background-image: url(../../img/nomer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__box {
+        background-color: rgb(123, 123, 123);
+        display: flex;
+
+    }
+
+    &__title {
+        @include Font36;
+        color: #fff;
+        margin-bottom: 48px;
+    }
+
+    &__block1 {
+        width: 50%;
+        background-color: #F0F0F0;
+    }
+
+    &__text {
+        padding: 9px 30px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text1 {
+        @include Font18;
+        color: black;
+        text-decoration: underline;
+    }
+
+    &__text2 {
+        @include Font18;
+    }
+
+    &__list {
+        padding: 40px 16px 31px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        @include Font18;
+        text-align: left;
+    }
+
+    &__block2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        background-color: #161A2B;
+        padding: 91px 141px 92px 68px;
+    }
+
+    &__block2-tt {
+        @include Font24;
+        color: #fff;
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+
+    }
+
+    &__checkbox--tt {
+        @include Font14;
+        color: #fff;
+        text-align: left;
+    }
+
+    &__checkbox {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__input {
+        width: 464px;
+        height: 40px;
+        background-color: transparent;
+        outline: none;
+        border: 3px solid transparent;
+        border-bottom-color: grey;
+        color: #fff;
+    }
+
+    &__btn {
+        height: 56px;
+        width: 336px;
+        background-color: transparent;
+        border: 3px solid red;
+        @include Font18;
+        color: #F0F0F0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width:770px) {
+ .page4{
+    padding: 56px 48px;
+    background-image: url(../../img/nomer1.jpg);
+    background-color: #161A2B;
+    &__box{
+        flex-direction: column;
+    }
+    &__block1{
+        width: 100%;
+    } 
+    
+    &__block2{
+        padding: 80px 88px;
+        width: 500px;
+    } 
+    &__form{
+        width: 540px;
+    }
+    &__input{
+        width: 540px;
+    }
+    
+}   
+
+}
+@media screen and (max-width:425px) {
+    .page4{
+        padding: 40px 24px;
+    
+    &__title{
+        @include Font18;
+        text-align: left;
+    }
+    &__text1{
+        @include Font14;
+        font-size: 12px;
+    } &__text2{
+        display: none;
+    }
+    &__item{
+        @include Font14;
+
+        text-align: left;
+    }
+    &__block2{
+        padding: 48px 12px;
+        width: auto;
+
+    }
+    &__block2-tt{
+        @include Font14;
+        text-align: left;
+    }
+    &__input{
+        width: 248px;
+    }
+    &__checkbox--tt{
+        width: 250px;
+        @include Font14;
+        text-align: left;
+    }
+    &__btn{
+        width: 248px;
+        height: 48px;
+    }
+    &__checkbox{
+        width: 327px;
+    }
+    &__block1{
+        width: auto;
+    }
+    &__form{
+        width: auto;
+    }
+    }
+}

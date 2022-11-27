@@ -1,0 +1,77 @@
+.rabota {
+    padding: 80px 126px 91px 120px;
+    background-color: #161A2B;
+    color: #fff;
+
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    &__title {
+        @include Font36;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__elem {
+        padding-left: 10px;
+        width: 245px;
+        border: 3px solid transparent;
+        border-left-color: red;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    &__text1 {
+        @include Font24;
+    }
+
+    &__text2 {
+        @include Font18;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .rabota {
+        padding: 80px 99px 80px 48px;
+
+        &__box {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        &__elem {
+            width: 197px;
+            height: 148px;
+        }
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .rabota {
+        padding: 40px 40px;
+        &__title {
+           font-size: 28px;
+
+        }
+        &__box{
+            justify-content: flex-start;
+        }
+        &__text2{
+            br{
+                display: none;
+            }
+        }
+    }
+}

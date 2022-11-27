@@ -1,0 +1,83 @@
+.zakaz{
+    padding: 88px 119px;
+    background-color: #fff;
+
+
+    &__block{
+    }
+    &__title{
+        @include Font36;
+        margin-bottom: 65px;
+    }
+    &__input{
+        width: 378px;
+        height: 44px;
+        background-color: transparent;
+        border: 3px solid transparent;
+        border-bottom-color: gray;
+        outline: none;
+    }
+    &__btn{
+        width: 216px;
+        height: 64px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include Font18;
+        color: black;
+    }
+    &__form{
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__text{
+        @include Font14;
+        text-align: left;
+        display: flex;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:770px){
+    .zakaz{
+        padding: 80px 48px;
+    
+    &__title{
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+    &__input{
+        width: 192px;
+    }
+    &__btn{
+        width: 144px;
+        height: 48px;
+        font-size: 14px;
+    }
+    }
+}
+@media screen and (max-width:425px) {
+    .zakaz{
+        padding: 56px 24px;
+    
+    &__block{
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__input{
+        width: 272px;
+    }
+    &__btn{
+        width: 272px;
+    }
+    }
+    
+}

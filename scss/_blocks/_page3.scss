@@ -1,0 +1,106 @@
+.page3 {
+    padding: 80px 120px;
+    background-color: #F0F0F0;
+
+    &__title {
+        margin-bottom: 48px;
+        @include Font36;
+        font-style: sans-serif;
+    }
+
+    &__elements {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    &__item {
+        height: 340px;
+        width: 576px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+
+
+    }
+
+    &__hr {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        hr {
+            width: 360px;
+            height: 8px;
+            background: #EE1B24;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        img {
+            width: 112px;
+            height: 112px;
+        }
+    }
+
+    &__icon-text {
+        @include Font24;
+    }
+
+    &__pargraf {
+        width: 492px;
+        @include Font24;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .page3 {
+        padding: 56px 48px;
+
+        &__item {
+            width: 320px;
+            height: 256px;
+        }
+        &__icon{
+            gap: 16px;
+            img{
+                width: 56px;
+                height: 56px;
+            }
+        }
+        &__icon-text{
+            @include Font18;
+            text-align: left;
+        }
+        &__pargraf{
+            width: 292px;
+            @include Font18;
+            text-align: left;
+        }
+        &__elements{
+            gap: 18px;
+        }
+        &__hr{
+            hr{
+                width: 204px;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:425px) {
+    .page3{
+        padding: 40px 24px;
+        &__title{
+            font-size: 18px;
+        }
+    }
+}
